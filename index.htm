@@ -11,10 +11,14 @@
   <div class="flex">
     <div>
       <img src="logo.png" alt="Monimentor Logo" style="width: 50%; margin-left: 25%;">
-      <p style="text-align: center; color:#0a062f ; font-size: 20px; margin-top: 10px;">Onbekend apparaat!</p>
+      <p id="cap" style="text-align: center; color:#0a062f ; font-size: 20px; margin-top: 10px;">Onbekend apparaat!</p>
+      <p id="tips" style="text-align: left; color:#0a062f ; font-size: 20px; margin-top: 10px;"></p>
   </div>
   </div>
 </body>
+<script language="javascript">
+  let sa = window.matchMedia('(display-mode: standalone)').matches; let t = document.getElementById("tips"); t.innerHTML = true ? "<ul><li>Controleer of de VPN actief is.</li><li>Sluit de app een keer volledig af</li><li>Neem <a href='mailto:support@monimentor.com'>contact</a> op als het probleem aanhoudt</ul>" : "";
+</script>
 <style>
   body {
   /* height: 100%; */
